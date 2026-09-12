@@ -34,7 +34,7 @@ Before publishing:
 
 1. Deploy `server/` as a Node service using `npm run build` and `npm start`.
 2. Set backend `PORT` and `CLIENT_URL`.
-3. Set optional server-side AI variables: `AI_API_KEY`, `AI_API_URL`, `AI_MODEL`, and `DATABASE_URL`.
+3. Set optional server-side AI variables: `AI_API_KEY`, `AI_API_URL`, and `AI_MODEL`.
 4. Deploy `client/` as a Vite static site using `npm run build`.
 5. Set frontend build variable `VITE_API_BASE_URL` to the verified backend URL.
 6. Configure SPA fallback to serve `client/dist/index.html` for nested routes.

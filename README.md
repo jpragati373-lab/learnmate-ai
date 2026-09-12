@@ -64,7 +64,7 @@ The copy command is for Windows PowerShell/cmd. Never commit `.env`.
 
 ## Environment variables
 
-See [.env.example](./.env.example). The backend uses `PORT`, `AI_API_KEY`, `AI_API_URL`, `AI_MODEL`, `DATABASE_URL`, and `CLIENT_URL`. The Vite build uses `VITE_API_BASE_URL` to reach the deployed backend. AI keys remain server-side.
+See [.env.example](./.env.example). The backend uses `PORT`, `AI_API_KEY`, `AI_API_URL`, `AI_MODEL`, and `CLIENT_URL`. The Vite build uses `VITE_API_BASE_URL` to reach the deployed backend. AI keys remain server-side.
 
 ## Running the application
 
