@@ -5,14 +5,14 @@
 **Status:** NOT DEPLOYED  
 **Verified URL:** None
 
-The frontend was verified locally at `http://localhost:5173` / `http://127.0.0.1:5173`, but no public deployment URL is available.
+The frontend was verified locally at `http://localhost:5173`, but no public deployment URL is available.
 
 ## Backend
 
 **Status:** NOT DEPLOYED  
 **Verified URL:** None
 
-The compiled backend was verified locally at `http://localhost:4000`. `GET /api/health` returned:
+The compiled backend was verified locally at `http://localhost:4000`. On 2026-09-12, `GET /api/health` returned:
 
 ```json
 {
@@ -23,10 +23,10 @@ The compiled backend was verified locally at `http://localhost:4000`. `GET /api/
 
 ## GitHub
 
-**Status:** NOT VERIFIED  
+**Status:** NOT CONFIGURED  
 **Verified URL:** None
 
-The workspace is not currently a Git repository and no remote URL is configured.
+The local repository exists on branch `main`, but no GitHub remote URL is configured.
 
 ## Deployment requirements
 
@@ -39,3 +39,9 @@ Before publishing:
 5. Set frontend build variable `VITE_API_BASE_URL` to the verified backend URL.
 6. Configure SPA fallback to serve `client/dist/index.html` for nested routes.
 7. Replace the unverified fields in this document only after testing the public URLs.
+
+## Verification record
+
+**Last local verification:** 2026-09-12  
+**Public URLs verified:** None  
+**Public deployment status:** Not deployed
