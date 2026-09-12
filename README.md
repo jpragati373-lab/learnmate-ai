@@ -24,7 +24,15 @@ College students and competitive-exam learners studying technical and academic s
 
 ## How it works
 
-Landing → onboarding → dashboard → learning path → explanation → assistant → practice → results → revision → analytics. Deterministic application logic owns scores, progress, recommendations, revision timing, and analytics; AI supplies explanations, question content, and conversational help.
+The core innovation is a closed learning loop:
+
+**INPUT TOPIC/MATERIAL → AI EXPLANATION → LEARNING PATH → ADAPTIVE PRACTICE → ANSWER EVALUATION → WEAK-TOPIC DETECTION → PERSONALIZED RECOMMENDATION → SMART REVISION → ANALYTICS → CONTEXTUAL AI ASSISTANT**
+
+The final demo flow is:
+
+**Landing Page → Dashboard → Learning Path → Computer Networks → Subnetting → AI Explanation → Practice Quiz → Submit Answer → Quiz Result → Weak Topic Detection → Personalized Recommendation → Revision → Analytics → AI Study Assistant**
+
+Deterministic application logic owns scores, progress, recommendations, revision timing, and analytics; AI supplies explanations, question content, and conversational help.
 
 ## AI architecture
 
@@ -92,7 +100,11 @@ The latest verified results are recorded in [docs/test-report.md](./docs/test-re
 
 ## Demo flow
 
-Use **Start Learning**, complete onboarding, select Computer Networks/Subnetting, generate an explanation, ask the assistant about subnet masks, start practice, intentionally miss a question, inspect results, then open revision and analytics. Demo content is labelled and uses deterministic sample learning activity; it is not a claim about a real student.
+Follow the exact two-minute walkthrough in [docs/demo-script.md](./docs/demo-script.md). Demo content is labelled and uses deterministic sample learning activity; it is not a claim about a real student.
+
+## Submission links
+
+No public GitHub, frontend, backend, or demo-video URL is recorded until it has been created and opened for verification. See [docs/verified-urls.md](./docs/verified-urls.md).
 
 ## Responsible AI and security
 

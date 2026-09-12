@@ -120,16 +120,16 @@ Traditional learning tools often separate explanation, assessment, revision, and
 
 ## Live Demo URL
 
-[ADD VERIFIED LIVE DEMO URL]
+Not verified. No public deployment URL is available yet.
 
 ## GitHub URL
 
-[ADD VERIFIED GITHUB URL]
+Not verified. No public GitHub remote is configured yet.
 
 ## Demo Video URL
 
-[ADD DEMO VIDEO URL]
+Not available. No demo video URL has been published.
 
 ## Team Members
 
-[ADD TEAM MEMBERS]
+Not provided in the project materials. Add the actual team members before submitting the form.
