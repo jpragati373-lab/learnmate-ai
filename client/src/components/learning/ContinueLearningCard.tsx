@@ -1,0 +1,6 @@
+import { ArrowRight, Target } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import type { LearningPathTopic } from '../../types'
+import { Card } from '../ui/Card'
+import { ProgressBar } from '../ui/ProgressBar'
+export function ContinueLearningCard({ topic }: { topic: LearningPathTopic }) { return <Card className="border-slate-800 bg-slate-900 text-white"><div className="flex items-start justify-between gap-4"><div><p className="text-sm font-semibold text-indigo-300">Continue Learning</p><h2 className="mt-3 text-2xl font-bold">{topic.subject}</h2><p className="mt-1 text-slate-300">{topic.name}</p></div><Target className="h-6 w-6 text-indigo-300" /></div><div className="mt-6"><ProgressBar value={topic.progress} label="Topic progress" /></div><p className="mt-4 text-sm text-slate-300">Recommended next action: {topic.accuracy < 60 ? 'Practice 5 easier questions' : 'Continue to the next lesson'}</p><Link to={`/practice?topic=${encodeURIComponent(topic.name)}&difficulty=${topic.accuracy < 60 ? 'beginner' : 'intermediate'}`} className="mt-5 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-slate-900">Continue <ArrowRight className="h-4 w-4" /></Link></Card> }

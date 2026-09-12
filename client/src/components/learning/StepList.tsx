@@ -1,0 +1,2 @@
+import { Card } from '../ui/Card'
+export function StepList({ steps }: { steps: string[] }) { return <Card><h2 className="text-xl font-bold text-slate-950">Step-by-Step</h2><ol className="mt-5 space-y-4">{steps.map((step, index) => <li key={step} className="flex gap-3"><span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-indigo-600 text-xs font-bold text-white">{index + 1}</span><p className="text-sm leading-6 text-slate-600">{step}</p></li>)}</ol></Card> }

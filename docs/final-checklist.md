@@ -1,0 +1,22 @@
+# Final hackathon checklist
+
+- [x] Feature complete locally
+- [x] Application builds
+- [x] Backend builds
+- [x] Tests completed
+- [ ] End-to-end demo fully tested in one uninterrupted run
+- [x] Security checked
+- [x] Accessibility checked
+- [x] Responsible AI documented
+- [x] AI use disclosed
+- [x] README complete
+- [ ] GitHub repository ready and verified
+- [x] No secrets found in inspected source/docs
+- [ ] Deployment verified
+- [ ] Live URL added
+- [ ] Screenshots captured
+- [ ] Demo video recorded
+- [x] Two-minute pitch ready
+- [x] Submission answers ready
+- [ ] Team information added
+- [x] Final submission materials reviewed

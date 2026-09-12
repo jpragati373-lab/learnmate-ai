@@ -1,0 +1,14 @@
+node_modules
+dist
+coverage
+.env
+.env.*
+!.env.example
+client/.vite
+server/.env
+*.log
+logs
+tmp
+temp
+.DS_Store
+.vscode

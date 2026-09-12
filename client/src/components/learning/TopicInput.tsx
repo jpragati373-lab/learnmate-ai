@@ -1,0 +1,3 @@
+export function TopicInput({ value, onChange }: { value: string; onChange: (value: string) => void }) {
+  return <div><label htmlFor="topic" className="text-sm font-semibold text-slate-800">What concept are you working on?</label><input id="topic" value={value} onChange={(event) => onChange(event.target.value)} placeholder="e.g. TCP vs UDP, Python decorators, SQL JOINs, recursion..." maxLength={160} className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100" /></div>
+}

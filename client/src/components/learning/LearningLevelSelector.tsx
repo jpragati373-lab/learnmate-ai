@@ -1,0 +1,6 @@
+import type { LearningLevel } from '../../types'
+
+const levels: { value: LearningLevel; label: string; description: string }[] = [{ value: 'beginner', label: 'Beginner', description: 'Start with simple language' }, { value: 'intermediate', label: 'Intermediate', description: 'Build technical understanding' }, { value: 'advanced', label: 'Advanced', description: 'Explore depth and tradeoffs' }]
+export function LearningLevelSelector({ value, onChange }: { value: LearningLevel; onChange: (value: LearningLevel) => void }) {
+  return <fieldset><legend className="text-sm font-semibold text-slate-800">Learning level</legend><div className="mt-2 grid gap-2 sm:grid-cols-3">{levels.map((level) => <label key={level.value} className={`cursor-pointer rounded-xl border p-3 transition ${value === level.value ? 'border-indigo-500 bg-indigo-50 ring-2 ring-indigo-100' : 'border-slate-200 bg-white hover:border-indigo-200'}`}><input type="radio" name="level" value={level.value} checked={value === level.value} onChange={() => onChange(level.value)} className="sr-only" /><span className="block text-sm font-semibold text-slate-900">{level.label}</span><span className="mt-1 block text-xs text-slate-500">{level.description}</span></label>)}</div></fieldset>
+}
