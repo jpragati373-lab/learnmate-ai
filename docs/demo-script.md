@@ -18,8 +18,10 @@ Use the local app or the verified public deployment. If using the local fallback
 1. Click **Start Learning**.
 2. Complete or skip through onboarding using non-sensitive sample preferences.
 3. Open **Dashboard**.
-4. Open **Learning Path**.
-5. Select **Computer Networks** and **Subnetting**.
+4. Confirm the normal learner starts clean: 0% progress, no attempts, 0 questions, 0-day streak, no activity.
+5. If showing sample records separately, open `/dashboard?mode=demo` and point out **Demo Mode — Sample learning data**, then return to normal `/dashboard`.
+6. Open **Learning Path**.
+7. Select **Computer Networks** and **Subnetting**.
 
 ## 0:35–1:15 — Live product demonstration
 
@@ -58,7 +60,7 @@ Use the local app or the verified public deployment. If using the local fallback
 1. Open **Revision** and show the review scheduled from the actual result.
 2. Open **Analytics** and show progress, quiz accuracy, questions practiced, topic performance, and activity.
 3. Return to **Practice** and start another Beginner Subnetting quiz.
-4. Show that previously served questions are excluded when unused questions remain.
+4. Compare the recorded IDs with Quiz 1 and show that previously served questions are excluded when unused questions remain.
 5. Optionally switch to **Intermediate** to show that difficulty history is independent.
 
 ## 1:40–1:55 — Impact
