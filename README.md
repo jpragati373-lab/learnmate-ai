@@ -4,6 +4,12 @@
 
 **LearnMate AI is a personalized learning and practice platform that helps students understand difficult concepts, practise them adaptively, identify weak topics, revise at the right time, and decide what to learn next.**
 
+## Live Demo
+
+**Try LearnMate AI:** https://learnmate-ai-ecru.vercel.app
+
+LearnMate AI demonstrates an end-to-end learning loop from concept explanation and adaptive practice to weak-topic detection, personalized recommendations, revision, analytics, and the contextual AI study assistant.
+
 ## Problem
 
 Students often receive explanations without knowing whether they understood them. Their practice is frequently random, weaknesses stay hidden, and revision is easy to forget.
@@ -58,7 +64,27 @@ docs                    Architecture, testing, pitch and readiness notes
 
 ## Screenshots
 
-Capture the recommended judge-facing screens listed in [docs/screenshots.md](./docs/screenshots.md) after starting the local demo. No screenshots are committed until they are captured from the verified application.
+These screenshots show the verified LearnMate AI learning experience, from the dashboard and personalized learning path through AI-assisted learning, adaptive practice, quiz results, and analytics.
+
+### Dashboard
+
+![LearnMate AI Dashboard](./docs/screenshot/home.png)
+
+### Personalized Learning and AI Explanation
+
+![LearnMate AI Learning Experience](./docs/screenshot/learn.png)
+
+### Adaptive Practice Quiz
+
+![LearnMate AI Practice Quiz](./docs/screenshot/quiz.png)
+
+### Quiz Result and Performance
+
+![LearnMate AI Quiz Result](./docs/screenshot/result.png)
+
+### Learning Analytics
+
+![LearnMate AI Analytics](./docs/screenshot/analytics.png)
 
 ## Local setup
 
@@ -85,7 +111,7 @@ Open `http://localhost:5173`. The API runs on `http://localhost:4000` locally. F
 
 ## Deployment
 
-Deploy `client/` as a Vite static site and `server/` as a Node service. Build the frontend with `npm run build` from `client/`, and run the backend with `npm start` from `server/`. Configure `VITE_API_BASE_URL` on the frontend and `PORT`, `CLIENT_URL`, and optional AI provider variables on the backend. Configure SPA fallback to serve `client/dist/index.html` for client-side routes. No live deployment URL is claimed until it is verified.
+The application has been deployed and verified for demonstration. The frontend is deployed on Vercel and the backend is deployed on Render. Configure the frontend with `VITE_API_BASE_URL`; the backend uses `CLIENT_URL` and server-side AI credentials. SPA fallback is configured and required so client-side routes serve `client/dist/index.html`. For local or future deployments, build the frontend with `npm run build` from `client/` and run the backend with `npm start` from `server/`.
 
 ## Testing and validation
 
@@ -102,9 +128,12 @@ The latest verified results are recorded in [docs/test-report.md](./docs/test-re
 
 Follow the exact two-minute walkthrough in [docs/demo-script.md](./docs/demo-script.md). Demo content is labelled and uses deterministic sample learning activity; it is not a claim about a real student.
 
-## Submission links
+## Submission Links
 
-No public GitHub, frontend, backend, or demo-video URL is recorded until it has been created and opened for verification. See [docs/verified-urls.md](./docs/verified-urls.md).
+- **Live Demo:** https://learnmate-ai-ecru.vercel.app
+- **GitHub Repository:** https://github.com/jpragati373-lab/learnmate-ai
+- **Backend API:** https://learnmate-api-iqd8.onrender.com
+- **API Health Check:** https://learnmate-api-iqd8.onrender.com/api/health
 
 ## Responsible AI and security
 
@@ -116,7 +145,7 @@ The interface uses semantic headings, labelled controls, visible focus styles, k
 
 ## Known limitations
 
-There is no authentication, database persistence, multi-user isolation, production deployment, or unrestricted file upload in this build. Demo state is in memory/static data, so a refresh does not represent a persistent account. Provider output can still be wrong and requires verification.
+There is no authentication, database persistence, or multi-user isolation in this hackathon build. Demo state is in memory/static data, so a refresh does not represent a persistent account. The application is deployed for demonstration purposes, but is not intended as a production-scale system. Provider output can still be wrong and requires verification.
 
 ## Future roadmap
 
