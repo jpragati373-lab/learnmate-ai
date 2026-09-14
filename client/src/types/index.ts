@@ -1,7 +1,7 @@
 export type Difficulty = 'Beginner' | 'Intermediate' | 'Advanced'
 export type ProgressStatus = 'Not started' | 'Weak' | 'Developing' | 'Strong'
 export type LearningLevel = 'beginner' | 'intermediate' | 'advanced'
-export type LearningStyle = 'simple' | 'step-by-step' | 'analogy' | 'example'
+export type LearningStyle = 'simple' | 'step-by-step' | 'analogy' | 'example-based' | 'exam-focused' | 'example'
 
 export interface UserProfile {
   id: string

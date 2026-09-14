@@ -1,6 +1,7 @@
 import { Router } from 'express'
-import { explanationRequestSchema, generateExplanation } from '../services/aiService.js'
+import { explanationRequestSchema, generateExplanation, validateQuickCheck } from '../services/aiService.js'
 import { generateQuiz, quizRequestSchema, toPublicQuestion } from '../services/quizService.js'
+import { generateTeachingLesson, teachingRequestSchema, validateTeachingCheck } from '../services/teachingService.js'
 
 export const aiRouter = Router()
 
@@ -15,6 +16,37 @@ aiRouter.post('/explain', async (request, response, next) => {
   } catch (error) {
     next(error)
   }
+})
+
+aiRouter.post('/quick-check', (request, response) => {
+  const topic = typeof request.body?.topic === 'string' ? request.body.topic.trim() : ''
+  const selectedOption = request.body?.selectedOption
+  if (topic.length < 2 || !Number.isInteger(selectedOption) || selectedOption < 0 || selectedOption > 3) {
+    response.status(400).json({ error: { code: 'VALIDATION_ERROR', message: 'Choose a valid answer.' } })
+    return
+  }
+  response.json(validateQuickCheck(topic, selectedOption))
+})
+
+aiRouter.post('/teach', (request, response) => {
+  const parsed = teachingRequestSchema.safeParse(request.body)
+  if (!parsed.success) {
+    response.status(400).json({ error: { code: 'VALIDATION_ERROR', message: 'Choose a valid topic and learning level.' } })
+    return
+  }
+  response.json(generateTeachingLesson(parsed.data))
+})
+
+aiRouter.post('/teach/check', (request, response) => {
+  const topic = typeof request.body?.topic === 'string' ? request.body.topic.trim() : ''
+  const step = request.body?.step
+  const selectedOption = request.body?.selectedOption
+  const retry = request.body?.retry === true
+  if (topic.length < 2 || !Number.isInteger(step) || step < 0 || !Number.isInteger(selectedOption) || selectedOption < 0 || selectedOption > 3) {
+    response.status(400).json({ error: { code: 'VALIDATION_ERROR', message: 'Choose a valid teaching answer.' } })
+    return
+  }
+  response.json(validateTeachingCheck(topic, step, selectedOption, retry))
 })
 
 aiRouter.post('/generate-quiz', async (request, response, next) => {
